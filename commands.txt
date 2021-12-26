@@ -1,0 +1,16 @@
+# run with docker
+
+npx create-react-app core
+docker buils --tag react .
+docker run react
+docker run --publish 3000:3000 react
+docker-compose run app
+
+
+# run with docker-compose
+
+docker-compose build
+docker-compose up
+docker-compose down
+
+ 
